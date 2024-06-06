@@ -1,0 +1,41 @@
+#community {
+    margin-bottom: 70px;
+    /*serve per far arrivare lo scroll prima della scritta della sezione*/
+    padding-top: 90px;
+    margin-top: -90px;
+}
+
+
+.community {
+    text-align: center;
+    margin: 40px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.community h2 {
+    margin-bottom: 20px;
+}
+
+.community button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #7289da;
+    /* Colore di Discord */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.community button:hover {
+    background-color: #5b6eae;
+    /* Colore più scuro al passaggio del mouse */
+}
+
+.user-counter {
+    margin-top: 20px;
+    font-size: 18px;
+}

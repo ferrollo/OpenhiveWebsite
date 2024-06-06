@@ -1,0 +1,102 @@
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    /* Aggiungiamo un margine inferiore per separare la prima riga dalla seconda */
+}
+
+.left,
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.right img {
+    width: 30px;
+    /* Riduciamo leggermente le dimensioni delle icone dei social media */
+    margin-left: 10px;
+    /* Aggiungiamo un margine sinistro tra le icone */
+}
+
+.bottom-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* Impostiamo la larghezza al 100% per occupare tutto lo spazio disponibile */
+}
+
+.column {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.column h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+    /* Centriamo il testo all'interno delle intestazioni */
+}
+
+.column ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.column ul li {
+    margin-bottom: 5px;
+
+}
+
+.column ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.column ul li a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 10px;
+        /* Riduciamo il padding per adattare il footer a schermi più piccoli */
+    }
+
+    .top-row {
+        flex-direction: column;
+        /* Cambiamo la direzione del flexbox per la prima riga su schermi più piccoli */
+        text-align: center;
+        /* Centriamo il contenuto su schermi più piccoli */
+    }
+
+    .left,
+    .right {
+        margin-bottom: 10px;
+        /* Aggiungiamo un margine inferiore tra il logo/nome e i social media */
+    }
+
+    .bottom-row {
+        flex-direction: column;
+        /* Cambiamo la direzione del flexbox per la seconda riga su schermi più piccoli */
+    }
+
+    .column {
+        width: 100%;
+        /* Impostiamo la larghezza delle colonne al 100% su schermi più piccoli */
+        margin-bottom: 20px;
+        /* Aggiungiamo un margine inferiore tra le colonne su schermi più piccoli */
+    }
+}

@@ -1,0 +1,224 @@
+header {
+    padding: 10px;
+    background-color: #8b8686;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 90px;
+    margin-right: 10px;
+
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.desktop_menu {
+    margin-top: 24px;
+}
+
+.desktop_menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+.desktop_menu ul li {
+    list-style-type: none;
+    color: white;
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 26px;
+}
+
+.desktop_menu ul li:hover {
+    font-size: 19px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #FFCF24;
+    transition: 0.4s ease-in-out;
+}
+
+.menu-icon {
+    display: none;
+}
+
+@media screen and (min-width: 128px) and (max-width:900px) {
+    .desktop_menu {
+        position: fixed;
+        transition: 0.4s ease-in-out;
+        right: -280px;
+        top: 64px;
+        background: #8b8686;
+        width: 280px;
+        height: 100%;
+        z-index: 1000;
+    }
+
+    .desktop_menu ul li {
+        display: block;
+        text-align: left;
+        margin: 0;
+        padding: 10px 0 10px 26px;
+
+    }
+
+    .menu-icon {
+        display: block;
+        color: white;
+        font-size: 40px;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .mobile_menu {
+        right: 0;
+        transition: 0.4s ease-in-out;
+    }
+}
+
+p {
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    margin: 0;
+    cursor: pointer;
+
+    span {
+        font: 30px "Oswald", sans-serif, bold;
+        letter-spacing: 0;
+
+
+        /* Clip Background Image */
+
+        background: linear-gradient(90deg, #FFCF24, #6E4B00, #FFCF24, #6E4B00) repeat-y;
+        -webkit-background-clip: text;
+        background-clip: text;
+
+        /* Animate Background Gradient */
+        -webkit-text-fill-color: transparent;
+        background-size: 300% 200%;
+        animation: gradient-animation 5s linear infinite;
+
+        /* Activate hardware acceleration for smoother animations */
+
+        transform: translate3d(0, 0, 0);
+        backface-visibility: hidden;
+
+    }
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #8b8686;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    /* Assicura che la navbar sia sopra gli altri elementi 
+}
+
+
+
+
+
+
+
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+     Gli elementi di navigazione sono allineati a destra 
+    margin-right: 30px;
+}
+
+.nav-links li {
+    margin-right: 40px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Oswald", sans-serif;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger i {
+    font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
+*/

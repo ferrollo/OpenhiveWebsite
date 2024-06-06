@@ -1,0 +1,69 @@
+#products {
+    margin-bottom: 70px;
+    /*serve per far arrivare lo scroll prima della scritta della sezione*/
+    padding-top: 90px;
+    margin-top: -90px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    /* Centra le card orizzontalmente */
+    align-items: center;
+    /* Allinea le card in alto */
+    gap: 20px;
+    /* Spazio tra le card */
+
+}
+
+/* Stile per le card */
+.card {
+    justify-content: center;
+    align-items: center;
+    flex: 0 1 300px;
+    /* Le card occuperanno uno spazio uguale */
+    max-width: 300px;
+    /* Limita la larghezza massima delle card */
+    padding: 20px;
+    border: 1px solid #ddd;
+    /* Bordo per le card */
+    border-radius: 8px;
+    background-color: #fff;
+    /* Colore di sfondo per le card */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Ombra per un effetto di profondità */
+}
+
+.text {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.text p {
+    font-size: 38px;
+    margin: 10px 0 0 0;
+    line-height: 42px;
+    font-weight: 700;
+}
+
+.text h2 {
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+/* Responsività */
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        /* Centra le card verticalmente su schermi piccoli */
+    }
+
+    .card {
+        max-width: 100%;
+        /* Permette alle card di occupare tutta la larghezza disponibile */
+    }
+}
